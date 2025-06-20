@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Python automate desktop files
+excerpt_image:
 categories: python-automation
 ---
 
