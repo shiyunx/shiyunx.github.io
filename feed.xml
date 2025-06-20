@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2025-06-20T02:10:46+00:00</updated><id>/jekyll-theme-yat/feed.xml</id><author><name>GitHub User</name></author><entry><title type="html">Python automate desktop files</title><link href="/jekyll-theme-yat/python-automation/2025/05/09/python-automate-desktop-files.html" rel="alternate" type="text/html" title="Python automate desktop files" /><published>2025-05-09T00:00:00+00:00</published><updated>2025-05-09T00:00:00+00:00</updated><id>/jekyll-theme-yat/python-automation/2025/05/09/python-automate-desktop-files</id><content type="html" xml:base="/jekyll-theme-yat/python-automation/2025/05/09/python-automate-desktop-files.html"><![CDATA[<p>Automation helps to automate daily repetitive tasks to streamline processes and improve efficiency.</p>
+
+<p>In this example, python automation libraries will be used to automate desktop repetitive tasks where it can update multiple files at once in a desktop. Some examples of functions include:</p>
+
+<ol>
+  <li>Copy files</li>
+  <li>Delete files</li>
+  <li>Move files</li>
+  <li>Read files</li>
+  <li>Rename files</li>
+  <li>Write files</li>
+</ol>
+
+<p>Click <a href="https://github.com/shiyunx/python-automation-projects/tree/main/desktop%20files">here</a> to read more on the examples.</p>]]></content><author><name>GitHub User</name></author><category term="python-automation" /><summary type="html"><![CDATA[Automation helps to automate daily repetitive tasks to streamline processes and improve efficiency.]]></summary></entry><entry><title type="html">Mcdonald’s reviews</title><link href="/jekyll-theme-yat/tableau/2024/07/18/mcdonald's-reviews.html" rel="alternate" type="text/html" title="Mcdonald’s reviews" /><published>2024-07-18T00:00:00+00:00</published><updated>2024-07-18T00:00:00+00:00</updated><id>/jekyll-theme-yat/tableau/2024/07/18/mcdonald&apos;s-reviews</id><content type="html" xml:base="/jekyll-theme-yat/tableau/2024/07/18/mcdonald&apos;s-reviews.html"><![CDATA[<p><a href="https://github.com/shiyunx/mcdonald-reviews">Mcdonald’s reviews github link</a></p>
+
+<p><img src="https://raw.githubusercontent.com/shiyunx/shiyunx.github.io/refs/heads/master/assets/images/180724_m.jpeg" alt="banner" /></p>]]></content><author><name>GitHub User</name></author><category term="tableau" /><summary type="html"><![CDATA[Mcdonald’s reviews github link]]></summary></entry></feed>
