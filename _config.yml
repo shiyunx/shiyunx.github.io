@@ -1,23 +1,20 @@
 # Site settings
-title: 
-baseurl: "" # The subpath of your site, e.g. /blog (leave empty for user/organization pages)
+
+title: shiyunx
+#remote_theme: "jekyll/minima@1e8a445"
+remote_theme: jekyll/minima
+
 url: "https://shiyunx.github.io" # Corrected URL to match your GitHub Pages domain (assuming shiyunx.github.io)
 github_username: shiyunx # Optional: Your GitHub username
 
-# Theme settings
-theme: minima # <--- CORRECTED: Use this line, and make sure it's not indented like the lines above it
-# remote_theme: "jekyll/minima@1e8a445" # <--- Remove or comment this line out completely
 
 # Header pages for top navigation
 header_pages:
   - about.md
   - projects.md
   - blog.md # Include this ONLY if you create a 'blog.md' file for a separate blog link
-
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-seo-tag
+# Layout
+show_excerpts: true
 
 # Collections
 collections:
