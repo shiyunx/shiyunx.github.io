@@ -34,3 +34,9 @@
     margin-left: 10px; // Space between icons
   }
 }
+
+// CSS to remove the black border line on top of the site header
+.site-header {
+  border-bottom: none !important; // Removes the bottom border of the header
+  box-shadow: none !important;    // Removes any box-shadow that might look like a line
+}
