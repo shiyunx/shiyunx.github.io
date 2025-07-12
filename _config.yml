@@ -29,5 +29,5 @@ plugins:
 collections:
   projects:
     output: true # This makes Jekyll generate a separate page for each project
-    permalink: https://shiyunx.github.io/projects/my-portfolio-app/ # Defines the URL structure for individual projects
+    permalink: /projects/:path/ # This is the correct way
    
