@@ -1,0 +1,36 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Your custom footer styles to move content to sides
+.site-footer {
+  .wrapper { // Target the wrapper inside the footer
+    display: flex;
+    justify-content: space-between; // Pushes content to left and right
+    align-items: center; // Vertically aligns content
+    flex-wrap: wrap; // Allows content to wrap on smaller screens
+    padding: 15px 0; // Adjust padding as needed
+  }
+
+  .footer-left-content {
+    flex: 1; // Allows it to take available space
+    text-align: left;
+    margin-right: 15px; // Add some space between left and right
+  }
+
+  .footer-right-content {
+    text-align: right;
+    // The social-media-list from social.html will naturally align here
+  }
+
+  // Optional: Adjust social media list styling if needed
+  .social-media-list {
+    margin-bottom: 0; // Remove default list margin if any
+    display: flex; // To make social icons display inline
+    list-style: none; // Remove bullet points
+    padding: 0; // Remove default padding
+  }
+  .social-media-list li {
+    margin-left: 10px; // Space between icons
+  }
+}
