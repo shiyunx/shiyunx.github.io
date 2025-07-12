@@ -17,7 +17,6 @@ header_pages:
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
 
 # Collections
