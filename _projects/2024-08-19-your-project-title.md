@@ -1,24 +1,17 @@
 ---
-layout: project # IMPORTANT: Use the new project layout
-title: My Interactive Portfolio App
-date: 2025-07-12 14:00:00 +0800 # Use your local creation date/time
-categories: [web-development, react] # Optional categories for projects
-tags: [portfolio, app, frontend] # Optional tags
-featured_image: /assets/img/portfolio-app-screenshot.png # Optional: path to an image if you want one
-github_repo: https://github.com/yourusername/my-portfolio-app # Optional
-live_demo: https://yourusername.github.io/my-portfolio-app-demo/ # Optional
+layout: project
+title: My First Blog Post on Minima!
+date: 2025-07-12 10:30:00 +0800 # Set your local date and time here
+categories: jekyll tutorial
+tags: [getting-started, minima]
 ---
 
-This project is an interactive single-page application built to showcase my web development skills. It features dynamic content loading, smooth transitions, and a responsive design across various devices.
+Welcome to my very first blog post on my new Jekyll Minima site! This is an exciting journey into personal publishing.
 
-### Key Features:
-- Dynamic project filtering
-- Contact form integration
-- Dark/Light mode toggle
+### What to Expect
 
-### Technologies Used:
-- **Frontend:** React, HTML, CSS (SCSS)
-- **Tools:** Webpack, npm
+I'll be sharing thoughts on:
 
----
-You can [view the live demo here]({{ page.live_demo }}) or explore the [source code on GitHub]({{ page.github_repo }}).
+* Technology trends
+* Coding adventures
+* Personal reflections
