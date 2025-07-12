@@ -1,9 +1,5 @@
 # Site settings
 title: shiyunx # Set your site title
-email: your-email@example.com # Optional: Your email
-description: >- # This description appears in your site's meta tags for search engines
-  This is the official website for my portfolio and blog, powered by Jekyll and Minima.
-baseurl: "" # <--- ADDED THIS BACK: The subpath of your site (leave empty for user/organization pages)
 url: "https://shiyunx.github.io" # Your GitHub Pages domain
 github_username: shiyunx # Your GitHub username
 
