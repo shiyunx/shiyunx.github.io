@@ -17,9 +17,9 @@ header_pages:
 show_excerpts: true # This is good for showing post excerpts on listing pages
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 plugins: # <--- ADDED THIS SECTION BACK
-  - jekyll-seo-tag # <--- ADDED THIS BACK (good for SEO)
+  #- jekyll-seo-tag # <--- ADDED THIS BACK (good for SEO)
   # - jekyll-feed # If you removed this to hide RSS, keep it commented/removed
 
 # Collections
