@@ -2,6 +2,13 @@
 ---
 @import "{{ site.theme }}";
 
+
+// CSS to remove the black border line on top of the site header
+.site-header {
+  border-bottom: none !important; // Removes the bottom border
+  box-shadow: none !important;    // Just in case it's a box-shadow disguised as a line
+}
+
 // Your custom footer styles to move content to sides
 .site-footer {
   .wrapper { // Target the wrapper inside the footer
@@ -33,10 +40,4 @@
   .social-media-list li {
     margin-left: 10px; // Space between icons
   }
-}
-
-// CSS to remove the black border line on top of the site header
-.site-header {
-  border-bottom: none !important; // Removes the bottom border
-  box-shadow: none !important;    // Just in case it's a box-shadow disguised as a line
 }
