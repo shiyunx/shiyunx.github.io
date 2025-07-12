@@ -1,0 +1,24 @@
+# Site settings
+title: Your Awesome Site
+email: your-email@example.com
+description: >- # This description appears in your site's meta tags for search engines
+  This is the official website for my portfolio and blog, powered by Jekyll and Minima.
+baseurl: "" # The subpath of your site, e.g. /blog (leave empty for user/organization pages)
+url: "https://yourusername.github.io" # The base hostname & protocol for your site
+twitter_username: your_twitter_handle # Optional: Your Twitter handle
+github_username: yourusername # Optional: Your GitHub username
+
+# Theme settings
+theme: minima
+
+# Header pages for top navigation
+header_pages:
+  - about.md
+  - projects.md
+  - blog.md # Include this ONLY if you create a 'blog.md' file for a separate blog link
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
