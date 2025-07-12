@@ -4,8 +4,8 @@ url: "https://shiyunx.github.io" # Your GitHub Pages domain
 github_username: shiyunx # Your GitHub username
 
 # Theme settings
-#theme: minima # <--- CORRECTED: Use this line for GitHub Pages
-remote_theme: jekyll/minima # <--- Remove or comment this line out completely
+remote_theme: minima # <--- CORRECTED: Use this line for GitHub Pages
+#remote_theme: jekyll/minima # <--- Remove or comment this line out completely
 
 # Header pages for top navigation
 header_pages:
