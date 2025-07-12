@@ -1,11 +1,7 @@
 # Site settings
-title: Your Awesome Site
-email: your-email@example.com
-description: >- # This description appears in your site's meta tags for search engines
-  This is the official website for my portfolio and blog, powered by Jekyll and Minima.
+title: 
 baseurl: "" # The subpath of your site, e.g. /blog (leave empty for user/organization pages)
 url: "https://shiyunx.github.io" # Corrected URL to match your GitHub Pages domain (assuming shiyunx.github.io)
-twitter_username: your_twitter_handle # Optional: Your Twitter handle
 github_username: yourusername # Optional: Your GitHub username
 
 # Theme settings
