@@ -1,29 +1,31 @@
 ---
-layout: page
-title: My Projects
+layout: page # Use the generic page layout for this listing page
+title: Projects
 permalink: /projects/
 ---
 
-## My Portfolio of Work
+## My Projects & Creations
 
-Here's a selection of projects I've worked on, showcasing my skills in various areas.
+Here's an overview of the projects I've worked on, from web applications to data analysis tools. Each entry links to a dedicated page with more details.
 
-### Project Alpha (Completed: July 2024)
-* **Description:** A web application for managing tasks, built with HTML, CSS, JavaScript, and a modern framework.
-* **Key Features:** User authentication, task categorization, due date reminders.
-* **Technologies:** HTML, CSS, JavaScript, React.js
-* [View Live Demo](https://example.com/project-alpha-demo) | [GitHub Repository](https://github.com/yourusername/project-alpha)
-
-### Project Beta (Started: March 2025 - Ongoing)
-* **Description:** A data analysis script designed to process large datasets and generate insightful reports.
-* **Outcome:** Provided valuable insights into [results].
-* **Technologies:** Python, Pandas, Matplotlib
-* [GitHub Repository](https://github.com/yourusername/project-beta)
-
-### Project Gamma (Completed: May 2023)
-* **Description:** A static marketing website designed for a local business.
-* **Technologies:** HTML, CSS, Bootstrap
-* [View Live Site](https://example.com/project-gamma-site)
-
----
-*More projects are always under development! Stay tuned.*
+{% assign projects = site.projects | sort: "date" | reverse %}
+{% for project in projects %}
+<div class="project-listing">
+  <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+  <p class="project-meta">
+    <time datetime="{{ project.date | date_to_xmlschema }}">
+      {{ project.date | date: "%b %-d, %Y" }}
+    </time>
+    {% if project.categories %}
+      • Categories:
+      {% for category in project.categories %}
+        <a href="{{ site.baseurl | append: '/categories/' | append: category | slugify }}/">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    {% endif %}
+  </p>
+  {% if project.featured_image %}
+    <img src="{{ project.featured_image | relative_url }}" alt="{{ project.title | escape }}" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+  {% endif %}
+  <p>{{ project.excerpt | strip_html | truncatewords: 30 }} <a href="{{ project.url | relative_url }}">Read more...</a></p>
+</div>
+<hr> {% endfor %}
