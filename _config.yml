@@ -1,5 +1,6 @@
 # Site settings
 title: Your Awesome Site
+remote_theme: "jekyll/minima@1e8a445"
 email: your-email@example.com
 description: >- # This description appears in your site's meta tags for search engines
   This is the official website for my portfolio and blog, powered by Jekyll and Minima.
@@ -9,7 +10,7 @@ twitter_username: your_twitter_handle # Optional: Your Twitter handle
 github_username: yourusername # Optional: Your GitHub username
 
 # Theme settings
-theme: minima
+#theme: minima
 
 # Header pages for top navigation
 header_pages:
