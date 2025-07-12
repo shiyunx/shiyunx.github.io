@@ -2,7 +2,7 @@
 title: 
 baseurl: "" # The subpath of your site, e.g. /blog (leave empty for user/organization pages)
 url: "https://shiyunx.github.io" # Corrected URL to match your GitHub Pages domain (assuming shiyunx.github.io)
-github_username: yourusername # Optional: Your GitHub username
+github_username: shiyunx # Optional: Your GitHub username
 
 # Theme settings
 theme: minima # <--- CORRECTED: Use this line, and make sure it's not indented like the lines above it
