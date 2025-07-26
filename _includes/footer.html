@@ -1,0 +1,12 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-copyright-content">
+      <p class="text-muted">
+        &copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}.
+        {%- include social.html -%}
+      </p>
+    </div>
+
+</footer>
