@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #2c2c2c;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header, footer {
+    background: #f8f8f8;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  footer {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  nav a {
+    margin: 0 1rem;
+    color: #a9a9a9;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+    .filter-link {
+    color: black;
+    text-decoration: none;
+    margin-right: 12px;
+    font-weight: 500;
+  }
+
+  main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: auto;
+    width: 100%;
+  }
+
+  .github-icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    fill: #a9a9a9;
+    margin-left: 0.3rem;
+    transition: fill 0.3s ease;
+  }
+
+  .github-link:hover .github-icon {
+    fill: #000;
+  }
+
+</style>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/post/' | relative_url }}">Posts</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <div>
+      © 2025 {{ site.title }}  
+      <a class="github-link" href="https://github.com/shiyunx" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+        <!-- GitHub Mark SVG from https://github.com/logos -->
+        <svg class="github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <title>GitHub</title>
+          <path d="M12 0C5.372 0 0 5.373 0 12c0 5.303 3.438 9.8 8.205 11.387.6.11.82-.258.82-.577 
+          0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
+          1.205.084 1.838 1.237 1.838 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.305.76-1.605-2.665-.304-5.467-1.335-5.467-5.932 
+          0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404 
+          11.5 11.5 0 013.003.404c2.291-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.84 1.235 1.91 1.235 3.22 
+          0 4.61-2.807 5.625-5.48 5.922.43.37.823 1.102.823 2.222 0 1.606-.015 2.9-.015 3.293 0 .322.217.694.825.576C20.565 21.795 24 17.298 24 12 
+          24 5.373 18.627 0 12 0z"/>
+        </svg>
+
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
+

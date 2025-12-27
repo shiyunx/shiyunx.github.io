@@ -1,0 +1,9 @@
+title: shiyunx
+theme: minima
+
+# Layout
+show_excerpts: true
+
+collections:
+  projects:
+    output: true

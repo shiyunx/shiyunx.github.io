@@ -1,0 +1,23 @@
+---
+---
+@import "{{ site.theme }}";
+
+// Your custom footer styles to move content to sides
+.site-footer {
+  .wrapper { // Target the wrapper inside the footer
+    display: flex;
+    justify-content: space-between; // Pushes content to left and right
+    align-items: center; // Vertically aligns content
+    flex-wrap: wrap; // Allows content to wrap on smaller screens
+    padding: 15px 0; // Adjust padding as needed
+  }
+
+  .footer-left-content {
+    flex: 1; // Allows it to take available space
+    text-align: left;
+    margin-right: 15px; // Add some space between left and right
+  }
+
+}
+
+
