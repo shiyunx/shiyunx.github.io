@@ -23,7 +23,7 @@ This is my personal website, built with jekyll and hosted on github pages. The s
      alt="Personal Website3" 
      style="width: 70%; max-width: 500px; display: block; margin: 1rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
-#### Built With online resources, tools, and technologies:
+#### Built with online resources, tools, and technologies:
 - **Minima template** – jekyll theme
 - **Jekyll** – static site generator
 - **Liquid** – dynamic content
@@ -45,5 +45,3 @@ This is my personal website, built with jekyll and hosted on github pages. The s
 - I gained the skills to create a website through the use of online resources, tools, and technologies.
 
 Click [here](https://shiyunx.github.io/) to view the website.
-
-Note: to be continued
