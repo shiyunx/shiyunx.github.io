@@ -22,26 +22,26 @@ I preprocessed the dataset to ensure high-quality input for the models.
 ### Fault Analysis
 I explored the dataset using Exploratory Data Analysis (EDA) to find patterns in streetlight failures.
 * **Visualisation:** Created charts to show which areas have the most streetlight faults.
-* **Tools:** Used pandas to organise the data and seaborn to draw charts of the trends.
+* **Tools:** Used Pandas to organise the data and Seaborn to draw charts of the trends.
 
 ### Severity Prediction
 To prioritize maintenance, I built a model to identify the severity of each fault.
-* **Model:** Decision Tree Classifier
 * **Outcome:** The system labels faults as critical, high, medium, or low, ensuring that the most serious issues are addressed first.
 
 ### Fault Classification
 Each fault is categorised into specific technical types to indicate the appropriate tools or actions required.
 * **Categories:** Control System, Power-Related, and Sensor-Related failures.
-* **Validation:** Used confusion matrices to ensure the model correctly distinguishes between hardware failure and signal noise.
+* **Check:** Used confusion matrices to ensure the model correctly distinguishes between hardware failure and signal noise.
 
 ### Automated Response
-The final stage of the pipeline transforms data into action.
-* **Logic:** The system filters for critical faults and generates immediate alerts.
-* **Impact:** Reduces manual monitoring and ensures faster response times for public safety.
+The final stage of the pipeline turns insights into actions.
+* **How it works:** The system filters for critical faults and generates immediate alerts.
+* **Outcome:**  Helps reduce manual monitoring and allows faster response times.
 
-### Tech Stack
-- **Languages:** Python
-- **Libraries:** Scikit-Learn, Pandas, Matplotlib, Seaborn
-- **Model:** Decision Tree Classification
+### Tools & Skills
+- **Programming Language:** Python
+- **Data tools:** Pandas, Matplotlib, Seaborn
+- **Machine Learning Library:** Scikit-Learn
+- **Model:** Decision Tree Classifier
 
-**[View the Full Code on GitHub](https://github.com/shiyunx/lighting-fault-detection)**
+**[View on github](https://github.com/shiyunx/lighting-fault-detection)**
