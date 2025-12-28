@@ -14,7 +14,6 @@ This project focuses on improving street lighting efficiency and enhancing commu
 ## Key Features
 
 ### Data Cleaning
-
 I preprocessed the dataset to ensure high-quality input for the models.
 * **Feature Engineering:** Converted raw timestamps into time features.
 * **Standardisation:** Handled missing values and standardised location names across Singapore districts.
@@ -35,13 +34,13 @@ Each fault is categorised into specific technical types to indicate the appropri
 
 ### Automated Response
 The final stage of the pipeline turns insights into actions.
-* **How it works:** The system filters for critical faults and generates immediate alerts.
+* **Process:** The system filters for critical faults and generates immediate alerts.
 * **Outcome:**  Helps reduce manual monitoring and allows faster response times.
 
 ### Tools & Skills
-- **Programming Language:** Python
-- **Data tools:** Pandas, Matplotlib, Seaborn
-- **Machine Learning Library:** Scikit-Learn
+- **Language:** Python
+- **Data:** Pandas, Matplotlib, Seaborn
+- **Machine Learning:** Scikit-Learn
 - **Model:** Decision Tree Classifier
 
-**[View on github](https://github.com/shiyunx/lighting-fault-detection)**
+> **[View on github](https://github.com/shiyunx/lighting-fault-detection)**
