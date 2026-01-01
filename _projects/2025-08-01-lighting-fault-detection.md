@@ -9,7 +9,7 @@ permalink: /projects/2025-08-01-lighting-fault-detection/
 ---
 
 ## Objective
-This project focuses on improving street lighting efficiency and enhancing commuter safety by detecting, analysing, and responding to lighting faults. Using a synthetic dataset of 466 lighting records, the system identifies potential issues, predicts their severity, and classifies fault types to suggest automated responses.
+This project focuses on improving street lighting efficiency and enhancing commuter safety by detecting, analysing, and responding to lighting faults. Using a dataset of 466 lighting records, the system identifies potential issues, predicts their severity, and classifies fault types to suggest automated responses.
 
 ## Key Features
 
