@@ -43,4 +43,4 @@ The final stage of the pipeline turns insights into actions.
 - **Machine Learning:** Scikit-Learn
 - **Model:** Decision Tree Classifier
 
-**[View on github](https://github.com/shiyunx/lighting-fault-detection)**
+**[View Github](https://github.com/shiyunx/lighting-fault-detection)**
