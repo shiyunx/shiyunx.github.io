@@ -44,4 +44,4 @@ This is my personal website, built with jekyll and hosted on github pages. The s
 #### Learning outcome
 - I gained the skills to create a website through the use of online resources, tools, and technologies.
 
-Click [here](https://shiyunx.github.io/) to view the website.
+[View Github](https://shiyunx.github.io/)
