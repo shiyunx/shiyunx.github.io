@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Automations Projects
-permalink: /projects/automations/
+title: Automation Projects
+permalink: /projects/automation/
 ---
 
-# Category: Automations
+# Category: Automation
 
 {% assign filtered = site.projects | where: "category", "Automations" %}
 
