@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 # Projects
-[Automations](/projects/automations/){: .filter-link } [Applications](/projects/applications/){: .filter-link }[Data](/projects/data/){: .filter-link } [Uncategorised](/projects/uncategorised/){: .filter-link }
+[Automation](/projects/automations/){: .filter-link } [Applications](/projects/applications/){: .filter-link }[Data](/projects/data/){: .filter-link } [Uncategorised](/projects/uncategorised/){: .filter-link }
 
 {% for project in site.projects %}
 <div style="

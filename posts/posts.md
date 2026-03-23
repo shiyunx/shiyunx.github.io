@@ -4,7 +4,7 @@ title: Posts
 permalink: /post/
 ---
 # Posts
-[Automations](/posts/automations/){: .filter-link } [Applications](/posts/applications/){: .filter-link }[Data](/posts/data/){: .filter-link } [Uncategorised](/posts/uncategorised/){: .filter-link }
+[Automation](/posts/automations/){: .filter-link } [Applications](/posts/applications/){: .filter-link }[Data](/posts/data/){: .filter-link } [Uncategorised](/posts/uncategorised/){: .filter-link }
 
 {% for post in site.posts %}
 <div style="
