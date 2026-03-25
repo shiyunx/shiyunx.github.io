@@ -4,7 +4,7 @@ title: Date Tracker
 date: 2024-09-15
 description: Automated date tracker in excel
 repo:
-category: Automations
+category: Automation
 permalink: /posts/2024-09-15-date-tracker/
 ---
 Below are the steps to automate the daily data tracking:

@@ -6,7 +6,7 @@ permalink: /posts/automation/
 
 # Category: Automation
 
-{% assign filtered = site.posts | where: "category", "Automations" %}
+{% assign filtered = site.posts | where: "category", "Automation" %}
 
 {% for post in filtered %}
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
