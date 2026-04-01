@@ -5,6 +5,7 @@ permalink: /projects/
 ---
 
 # Projects
+
 <!-- Filter Links -->
 [All](/projects/){: .filter-link }
 [Automation](/projects/automation/){: .filter-link }
@@ -18,7 +19,9 @@ permalink: /projects/
   {% assign filtered_projects = site.projects | where: "category", page.category %}
 {% endif %}
 
-{% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
+<!-- Sort using timestamp to ensure proper chronological order -->
+{% assign sorted_projects = filtered_projects | sort: "date" %}
+{% assign sorted_projects = sorted_projects | reverse %}
 
 {% for project in sorted_projects %}
 <div style="
