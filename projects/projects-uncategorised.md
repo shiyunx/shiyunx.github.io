@@ -19,9 +19,9 @@ permalink: /projects/uncategorised/
     <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
   {% endif %}
 
-  {% if post.date %}
+  {% if project.date %}
     <span style="color: #999; font-size: 0.9rem;">
-      {{ post.date | date: "%B %-d, %Y" }}
+      {{ project.date | date: "%B %-d, %Y" }}
     </span><br><br>
   {% endif %}
   
