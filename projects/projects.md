@@ -18,7 +18,7 @@ permalink: /projects/
   margin-bottom: 1.5rem;
 ">
 
-  <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
+  <a href="{{ projects.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
     {{ project.title }}
   </a><br>
 
