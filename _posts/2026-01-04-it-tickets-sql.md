@@ -2,7 +2,7 @@
 layout: post
 title: IT Tickets Sql
 date: 2026-01-04
-description: Use sqlite with python
+description:
 repo:
 category: Data
 permalink: /posts/2026-01-04-it-tickets-sql/
