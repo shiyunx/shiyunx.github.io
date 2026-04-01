@@ -3,6 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
+
 # Projects
 [Automation](/projects/automation/){: .filter-link } 
 [Applications](/projects/applications/){: .filter-link }
@@ -10,43 +11,46 @@ permalink: /projects/
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
 {% comment %}
-  Filter by category if page.category exists
-  Then sort the filtered projects by date descending
+  1. Filter projects by category if page.category exists
+  2. Sort filtered projects by date descending
 {% endcomment %}
+
 {% if page.category %}
   {% assign filtered_projects = site.projects | where: "category", page.category %}
 {% else %}
   {% assign filtered_projects = site.projects %}
 {% endif %}
 
+{% comment %}
+  Liquid treats nil dates as empty, so we add a sort key fallback
+{% endcomment %}
 {% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
 {% for project in sorted_projects %}
-<div style="
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  padding: 1rem 1.5rem;
-  margin-bottom: 1.5rem;
-">
+  <div style="
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+  ">
+    <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
+      {{ project.title }}
+    </a><br>
 
-  <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
-    {{ project.title }}
-  </a><br>
+    {% if project.category %}
+      <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
+    {% endif %}
 
-  {% if project.category %}
-    <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
-  {% endif %}
+    {% if project.date %}
+      <span style="color: #999; font-size: 0.9rem;">
+        {{ project.date | date: "%B %-d, %Y" }}
+      </span><br><br>
+    {% endif %}
 
-  {% if project.date %}
-    <span style="color: #999; font-size: 0.9rem;">
-      {{ project.date | date: "%B %-d, %Y" }}
-    </span><br><br>
-  {% endif %}
+<!--{% if project.excerpt %}
+      <p>{{ project.excerpt }}</p>
+    {% endif %}-->
 
-  <!-- {% if project.excerpt %}
-    {{ project.excerpt }}
-  {% endif %} -->
-
-</div>
+  </div>
 {% endfor %}
