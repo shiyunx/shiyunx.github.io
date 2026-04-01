@@ -3,6 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
+
 # Projects
 
 [Automation](/projects/automation/){: .filter-link } 
@@ -10,12 +11,17 @@ permalink: /projects/
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
+{% comment %}
+1. Filter projects by category if page.category exists
+{% endcomment %}
 {% assign filtered_projects = site.projects %}
-
 {% if page.category %}
   {% assign filtered_projects = filtered_projects | where: "category", page.category %}
 {% endif %}
 
+{% comment %}
+2. Sort filtered projects by date descending (latest first)
+{% endcomment %}
 {% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
 {% for project in sorted_projects %}
