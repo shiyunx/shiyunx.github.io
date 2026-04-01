@@ -37,7 +37,5 @@ permalink: /projects/
     {{ project.excerpt }}
   {% endif %}-->
 
-  {# Excerpt hidden #}
-
 </div>
 {% endfor %}

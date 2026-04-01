@@ -36,7 +36,5 @@ permalink: /post/
     {{ post.excerpt }}
   {% endif %}-->
 
-{# Excerpt hidden #}
-
 </div>
 {% endfor %}
