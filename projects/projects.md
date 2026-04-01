@@ -4,14 +4,28 @@ title: Projects
 permalink: /projects/
 ---
 # Projects
+
 [Automation](/projects/automation/){: .filter-link } 
 [Applications](/projects/applications/){: .filter-link }
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
+{% comment %}
+  Step 1: Filter projects by category if page.category exists
+{% endcomment %}
+{% assign filtered_projects = site.projects %}
+{% if page.category %}
+  {% assign filtered_projects = filtered_projects | where: "category", page.category %}
+{% endif %}
 
+{% comment %}
+  Step 2: Sort filtered projects by date descending (latest first)
+{% endcomment %}
 {% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
+{% comment %}
+  Step 3: Display projects
+{% endcomment %}
 {% for project in sorted_projects %}
 <div style="
   border: 1px solid #e0e0e0;
@@ -34,10 +48,6 @@ permalink: /projects/
       {{ project.date | date: "%B %-d, %Y" }}
     </span><br><br>
   {% endif %}
-
-  <!--{% if project.excerpt %}
-    {{ project.excerpt }}
-  {% endif %}-->
 
 </div>
 {% endfor %}
