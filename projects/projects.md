@@ -9,6 +9,15 @@ permalink: /projects/
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
+  Filter by category if page.category exists
+  Then sort the filtered projects by date descending
+{% endcomment %}
+{% if page.category %}
+  {% assign filtered_projects = site.projects | where: "category", page.category %}
+{% else %}
+  {% assign filtered_projects = site.projects %}
+{% endif %}
+
 {% assign sorted_projects = site.projects | sort: "date" | reverse %}
 {% for project in sorted_projects %}
 <div style="
