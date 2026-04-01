@@ -32,9 +32,11 @@ permalink: /post/
   </span><br><br>
   {% endif %}
 
-  {% if post.excerpt %}
+  <!--{% if post.excerpt %}
     {{ post.excerpt }}
-  {% endif %}
+  {% endif %}-->
+
+{# Excerpt hidden #}
 
 </div>
 {% endfor %}
