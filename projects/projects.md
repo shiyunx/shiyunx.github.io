@@ -3,26 +3,11 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-
 # Projects
-
 [Automation](/projects/automation/){: .filter-link } 
 [Applications](/projects/applications/){: .filter-link }
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
-
-{% comment %}
-1. Filter projects by category if page.category exists
-{% endcomment %}
-{% assign filtered_projects = site.projects %}
-{% if page.category %}
-  {% assign filtered_projects = filtered_projects | where: "category", page.category %}
-{% endif %}
-
-{% comment %}
-2. Sort filtered projects by date descending (latest first)
-{% endcomment %}
-{% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
 {% for project in sorted_projects %}
 <div style="
@@ -32,6 +17,7 @@ permalink: /projects/
   padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
 ">
+
   <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
     {{ project.title }}
   </a><br>
@@ -45,6 +31,10 @@ permalink: /projects/
       {{ project.date | date: "%B %-d, %Y" }}
     </span><br><br>
   {% endif %}
+
+  <!--{% if project.excerpt %}
+    {{ project.excerpt }}
+  {% endif %}-->
 
 </div>
 {% endfor %}
