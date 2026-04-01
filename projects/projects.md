@@ -45,39 +45,35 @@ permalink: /projects/
 
 {% comment %}
   Step 4: Display projects
-  Highlight the first project as “Latest”
 {% endcomment %}
 {% for project in sorted_projects %}
-  {% assign is_latest = forloop.first %}
-  <div style="
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    {% if is_latest %}background-color: #f9f9f9; border-color: #007acc;{% endif %}
-  ">
-  
-    <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
-      {{ project.title }}
-      {% if is_latest %}
-        <span style="font-size: 0.8rem; color: #007acc; font-weight: bold;">(Latest)</span>
-      {% endif %}
-    </a><br>
-  
-    {% if project.category %}
-      <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
-    {% endif %}
-  
-    {% if project.date and project.date != "1970-01-01" %}
-      <span style="color: #999; font-size: 0.9rem;">
-        {{ project.date | date: "%B %-d, %Y" }}
-      </span><br><br>
-    {% endif %}
-  
-<!--{% if project.excerpt %}
-      <p>{{ project.excerpt }}</p>
-    {% endif %}-->
-  
-  </div>
+<div style="
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+">
+
+  <a href="{{ project.url | relative_url }}" style="font-size: 1.2rem; font-weight: bold; color: #333; text-decoration: none;">
+    {{ project.title }}
+  </a><br>
+
+  {% if project.category %}
+    <span style="font-size: 0.8rem; color: #666;">
+      Category: {{ project.category }}
+    </span><br>
+  {% endif %}
+
+  {% if project.date and project.date != "1970-01-01" %}
+    <span style="color: #999; font-size: 0.9rem;">
+      {{ project.date | date: "%B %-d, %Y" }}
+    </span><br><br>
+  {% endif %}
+
+  {% if project.excerpt %}
+    <p>{{ project.excerpt }}</p>
+  {% endif %}
+
+</div>
 {% endfor %}
