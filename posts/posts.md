@@ -23,9 +23,11 @@ permalink: /post/
     <span style="font-size: 0.8rem; color: #666;">Category: {{ post.category }}</span><br>
   {% endif %}
 
+  {% if post.date %}
   <span style="color: #999; font-size: 0.9rem;">
     {{ post.date | date: "%B %-d, %Y" }}
   </span><br><br>
+  {% endif %}
 
   {% if post.excerpt %}
     {{ post.excerpt }}

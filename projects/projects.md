@@ -6,7 +6,8 @@ permalink: /projects/
 # Projects
 [Automation](/projects/automation/){: .filter-link } [Applications](/projects/applications/){: .filter-link }[Data](/projects/data/){: .filter-link } [Uncategorised](/projects/uncategorised/){: .filter-link }
 
-{% for project in site.projects %}
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
+{% for project in sorted_projects %}
 <div style="
   border: 1px solid #e0e0e0;
   border-radius: 8px;
@@ -23,9 +24,11 @@ permalink: /projects/
     <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
   {% endif %}
 
-  <span style="color: #999; font-size: 0.9rem;">
+  {% if project.date %}
+    <span style="color: #999; font-size: 0.9rem;">
       {{ project.date | date: "%B %-d, %Y" }}
-  </span><br><br>
+    </span><br><br>
+  {% endif %}
 
   {% if post.excerpt %}
     {{ post.excerpt }}
