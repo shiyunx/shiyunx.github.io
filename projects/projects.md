@@ -23,11 +23,9 @@ permalink: /projects/
     <span style="font-size: 0.8rem; color: #666;">Category: {{ project.category }}</span><br>
   {% endif %}
 
-
-    <span style="color: #999; font-size: 0.9rem;">
+  <span style="color: #999; font-size: 0.9rem;">
       {{ project.date | date: "%B %-d, %Y" }}
-    </span><br><br>
-
+  </span><br><br>
 
   {% if post.excerpt %}
     {{ post.excerpt }}
