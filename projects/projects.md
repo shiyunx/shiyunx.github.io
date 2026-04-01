@@ -9,8 +9,6 @@ permalink: /projects/
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
-{% for project in sorted_projects %}
-
 {% for project in site.projects %}
 <div style="
   border: 1px solid #e0e0e0;
