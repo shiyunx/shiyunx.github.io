@@ -33,8 +33,8 @@ permalink: /projects/
     </span><br><br>
   {% endif %}
 
-  {% if post.excerpt %}
-    {{ post.excerpt }}
+  {% if project.excerpt %}
+    {{ project.excerpt }}
   {% endif %}
 
 </div>
