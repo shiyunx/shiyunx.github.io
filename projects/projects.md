@@ -10,11 +10,6 @@ permalink: /projects/
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
 
-{% assign filtered_projects = site.projects %}
-{% if page.category %}
-  {% assign filtered_projects = filtered_projects | where: "category", page.category %}
-{% endif %}
-
 {% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
 {% for project in sorted_projects %}
