@@ -13,7 +13,7 @@ permalink: /projects/
 <!--{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 {% for project in sorted_projects %}-->
 
-{% for post in site.projects %}
+{% for post in site.posts %}
 <div style="
   border: 1px solid #e0e0e0;
   border-radius: 8px;
