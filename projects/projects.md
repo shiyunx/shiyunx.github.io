@@ -9,6 +9,8 @@ permalink: /projects/
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
+
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 {% for project in sorted_projects %}
 <div style="
   border: 1px solid #e0e0e0;
