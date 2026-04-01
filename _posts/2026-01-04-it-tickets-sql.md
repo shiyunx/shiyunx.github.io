@@ -10,7 +10,7 @@ permalink: /posts/2026-01-04-it-tickets-sql/
 Sqlite Python Setup
 - Use an sqlite database in python with basic SQL operations.
 
-```
+``python
 # Import sqlite libraries
 import sqlite3
 import pandas as pd
