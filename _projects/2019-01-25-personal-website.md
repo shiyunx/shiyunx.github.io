@@ -24,12 +24,12 @@ This is my personal website, built with jekyll and hosted on github pages. The s
      style="width: 70%; max-width: 500px; display: block; margin: 1rem auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
 
 #### Built with online resources, tools, and technologies:
-- **Minima template** – jekyll theme
-- **Jekyll** – static site generator
-- **Liquid** – dynamic content
-- **Github Pages** – free hosting and automatic deployment  
-- **Markdown** – content writing
-- **HTML & CSS** – shadow boxes, layout styling and design tweaks
+- **Minima template**: Jekyll theme
+- **Jekyll**: Static site generator
+- **Liquid**: Dynamic content
+- **Github Pages**: Free hosting and automatic deployment  
+- **Markdown**: Content writing
+- **HTML & CSS**: Shadow boxes, layout styling and design tweaks
 
 #### Steps
 1. Create a new repository in github

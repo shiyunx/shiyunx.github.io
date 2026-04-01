@@ -19,4 +19,5 @@ import pandas as pd
 conn = sqlite3.connect(":memory:")
 cursor = conn.cursor()
 ```
+
 [View Github](https://github.com/shiyunx/it-tickets-sql)
