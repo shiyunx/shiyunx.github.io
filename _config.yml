@@ -2,7 +2,7 @@ title: shiyunx
 theme: minima
 
 # Layout
-show_excerpts: true
+show_excerpts: false
 
 collections:
   projects:

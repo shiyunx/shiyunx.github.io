@@ -3,24 +3,13 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-
 # Projects
 [Automation](/projects/automation/){: .filter-link } 
 [Applications](/projects/applications/){: .filter-link }
 [Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
-{% comment %}
-  Optional: If you are on a category page, filter projects first
-{% endcomment %}
-{% if page.category %}
-  {% assign filtered_projects = site.projects | where: "category", page.category %}
-{% else %}
-  {% assign filtered_projects = site.projects %}
-{% endif %}
-
-{% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
-
+{% assign sorted_projects = site.projects | sort: "date" | reverse %}
 {% for project in sorted_projects %}
 <div style="
   border: 1px solid #e0e0e0;
@@ -44,8 +33,8 @@ permalink: /projects/
     </span><br><br>
   {% endif %}
 
-  {% if project.excerpt %}
-    {{ project.excerpt }}
+  {% if post.excerpt %}
+    {{ post.excerpt }}
   {% endif %}
 
 </div>
