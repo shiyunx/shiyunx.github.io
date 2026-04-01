@@ -5,23 +5,21 @@ permalink: /projects/
 ---
 
 # Projects
-
-<!-- Filter Links -->
-[All](/projects/){: .filter-link }
-[Automation](/projects/automation/){: .filter-link }
+[Automation](/projects/automation/){: .filter-link } 
 [Applications](/projects/applications/){: .filter-link }
-[Data](/projects/data/){: .filter-link }
+[Data](/projects/data/){: .filter-link } 
 [Uncategorised](/projects/uncategorised/){: .filter-link }
 
-{% assign filtered_projects = site.projects %}
-
+{% comment %}
+  Optional: If you are on a category page, filter projects first
+{% endcomment %}
 {% if page.category %}
   {% assign filtered_projects = site.projects | where: "category", page.category %}
+{% else %}
+  {% assign filtered_projects = site.projects %}
 {% endif %}
 
-<!-- Sort using timestamp to ensure proper chronological order -->
-{% assign sorted_projects = filtered_projects | sort: "date" %}
-{% assign sorted_projects = sorted_projects | reverse %}
+{% assign sorted_projects = filtered_projects | sort: "date" | reverse %}
 
 {% for project in sorted_projects %}
 <div style="

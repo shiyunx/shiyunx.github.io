@@ -4,7 +4,6 @@ title: Posts
 permalink: /post/
 ---
 # Posts
-<!-- Filter Links -->
 [Automation](/posts/automation/){: .filter-link } 
 [Applications](/posts/applications/){: .filter-link }
 [Data](/posts/data/){: .filter-link } 
